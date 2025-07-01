@@ -1,0 +1,16 @@
+{
+  "name": "mobile-sales-dashboard-app",
+  "version": "1.0.0",
+  "description": "Minimalist mobile sales dashboard using Google Sheets and Chart.js.",
+  "main": "public/app.js",
+  "scripts": {
+    "start": "npx serve public",
+    "build": "echo 'No build step needed for vanilla JS'"
+  },
+  "dependencies": {
+    "chart.js": "^4.4.0"
+  },
+  "devDependencies": {},
+  "author": "",
+  "license": "MIT"
+} 
