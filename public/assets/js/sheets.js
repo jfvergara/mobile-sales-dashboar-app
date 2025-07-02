@@ -11,4 +11,15 @@ export async function fetchSalesData() {
   if (!res.ok) throw new Error('Failed to fetch sales data');
   const data = await res.json();
   return data.values || [];
+}
+
+// Fetch users from the 'usuarios' sheet
+export async function fetchUsers() {
+  const userRange = 'usuarios!A2:B';
+  const url = `https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/${userRange}?key=${API_KEY}`;
+  const res = await fetch(url);
+  if (!res.ok) throw new Error('Failed to fetch users');
+  const data = await res.json();
+  // data.values is an array of [username, password]
+  return (data.values || []).map(([username, password]) => ({ username, password }));
 } 

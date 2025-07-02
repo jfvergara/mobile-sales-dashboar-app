@@ -78,4 +78,51 @@ canvas {
   table, th, td {
     font-size: 0.9rem;
   }
+}
+
+#login-container {
+  max-width: 350px;
+  margin: 2rem auto 0 auto;
+  padding: 1.5rem 1rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+#login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+#login-form label {
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+#login-form input[type="text"],
+#login-form input[type="password"] {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+#login-form button {
+  padding: 0.5rem;
+  background: #4285f4;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+#login-form button:hover {
+  background: #3367d6;
+}
+#login-form h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+#login-error {
+  text-align: center;
 } 
