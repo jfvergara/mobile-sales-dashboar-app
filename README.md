@@ -10,7 +10,7 @@ A minimalist mobile web app that displays daily sales data and analytics from a 
 
 ## Quick Start
 1. Clone the repo
-2. Add your Google Sheets API key and Sheet ID in `public/sheets.js`
+2. Add your Google Sheets API key and Sheet ID in `public/assets/js/sheets.js`
 3. Install dependencies:
    ```bash
    npm install
@@ -25,11 +25,20 @@ A minimalist mobile web app that displays daily sales data and analytics from a 
 ```
 public/
   index.html
-  style.css
-  app.js
-  sheets.js
-  chart.js
+  manifest.json
+  assets/
+    images/
+      icon-48.png
+      icon-512.png
+    css/
+      style.css
+    js/
+      app.js
+      sheets.js
 package.json
+package-lock.json
+README.md
+LICENSE
 ```
 
 ## License
